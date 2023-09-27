@@ -15,21 +15,22 @@ class SuperFloatingAction extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         FloatingActionButton(
-          child:  Icon(Icons.add),
           onPressed: () {
           heroesInfo.heroe = 'Ironman';
           villanosInfo.villano = 'Mandarin';
         },
         backgroundColor: Colors.red,
+          child:  const Icon(Icons.add),
         ),
           const SizedBox(height: 10.0,),
          FloatingActionButton(
-            child: Icon(Icons.remove_circle_outlined),
+            
           onPressed: () {
           heroesInfo.heroe = 'Capitan America';
           villanosInfo.villano = 'Red Skull';
         },
         backgroundColor: Colors.blue,
+        child: const Icon(Icons.remove_circle_outlined),
         ),
       ],
     );
